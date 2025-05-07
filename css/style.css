@@ -14,7 +14,7 @@ body {
     left: 0;
     height: 3px;
     width: 100%;
-    background-color: #003B5C; /* cor da linha */
+    background-color: #003B5C;
     border-radius: 2px;
   }
 
@@ -23,28 +23,28 @@ body {
   }
 
   .nav-item {
-    margin-right: 25px; /* ajuste o valor conforme o espaçamento desejado */
+    margin-right: 25px;
 
   }
 
   .navbar-collapse {
     display: flex;
     height: 100%;
-    flex-direction: row;  /* Alinha os itens em coluna */
+    flex-direction: row;
     align-items: flex-end;
   }
 
   .circles {
     display: flex;
-    flex-direction: row;  /* Alinha os itens em coluna */
-    align-items: center; /* Alinha à direita */
-    gap: 10px; /* Espaçamento entre os círculos */
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
   }
 
   .sr-circle {
     width: 75px;
     height: 75px;
-    background-color: #D9D9D9; /* azul, pode trocar */
+    background-color: #D9D9D9;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -55,14 +55,14 @@ body {
   .sr-circle-2 {
     width: 40px;
     height: 40px;
-    background-color: white; /* azul, pode trocar */
+    background-color: white;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 14px;
 
-    border: 2px solid #003B5C; /* cor ao redor do círculo */
+    border: 2px solid #003B5C;
   }
 
   .rounded-circle {
@@ -101,7 +101,7 @@ body {
         left: 0;
         height: 3px;
         width: 100%;
-        background-color: #003B5C; /* cor da linha */
+        background-color: #003B5C;
         border-radius: 2px;
       }
   }
