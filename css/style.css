@@ -84,6 +84,59 @@ body {
     display: block;
   }
 
+/* A página 3 vai ter uma altura de 85% da tela */
+page-3.ativa {
+  display: flex;
+  flex-direction: column;
+  height: 85vh;
+  width: 100vw;
+}
+
+page-1.ativa {
+  display: flex;
+  flex-direction: column;
+  height: 85vh;
+  width: 100vw;
+}
+
+/* Definir a seção superior com a cor de fundo */
+.top-section {
+  height: 50%;
+  background-color: #003B5C;
+}
+
+.user-header {
+}
+
+/* Estilo da imagem do perfil */
+.user-header img {
+  width: 60px;  /* Largura da imagem */
+  height: 80px;  /* Altura da imagem */
+}
+
+/* Contêiner para o modal */
+.modal-container {
+  position: fixed;
+  top: 50%;  /* Coloca o modal logo abaixo do cabeçalho */
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%); /* Ajuste para centralizar verticalmente */
+  z-index: 1050;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Estilo do modal */
+.custom-modal {
+  background-color: white;  /* Fundo branco */
+  padding: 2rem;  /* Espaçamento interno */
+  border-radius: 10px;  /* Borda arredondada */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Sombras ao redor do modal */
+  max-width: 90%;  /* Largura máxima de 90% da tela */
+  width: 400px;  /* Largura fixa */
+}
+
+
   @media (max-width: 992px) {
     .circles {
         display: none;
