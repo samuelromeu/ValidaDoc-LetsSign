@@ -249,7 +249,7 @@ body {
 }
 
 .form-container {
-  max-width: 400px;
+  max-width: 700px;
   width: 100%;
   background: var(--white);
   padding: 1.5rem; /* Padding reduzido */
@@ -261,6 +261,9 @@ body {
   color: var(--primary-color);
   margin-bottom: 0.8rem; /* Margem reduzida */
   font-size: 1.2rem; /* Tamanho reduzido */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 
+  Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-weight: 600;
 }
 
 .form-container p {
@@ -311,6 +314,8 @@ body {
   width: 100%;
   padding: 0.7rem; /* Padding reduzido */
   font-size: 0.9rem; /* Tamanho reduzido */
+  background-color: #003B5C;
+  color: #ffffff  ;
 }
 body {
   background-color: #f0f8ff; /* Azul claro */
@@ -330,4 +335,7 @@ page-1.ativa,
 page-2.ativa,
 page-3.ativa {
   display: flex;
+}
+.imagem-notebook {
+  margin-top: 60px; /* Ajuste o valor conforme necessário */
 }
