@@ -267,3 +267,14 @@ body {
   display: flex;
   flex-direction: row;
 }
+page-1,
+page-2,
+page-3 {
+  display: none;
+}
+
+page-1.ativa,
+page-2.ativa,
+page-3.ativa {
+  display: flex;
+}
