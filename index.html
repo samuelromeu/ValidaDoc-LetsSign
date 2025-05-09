@@ -97,14 +97,22 @@
     <div class="bottom-section"></div>
   
     
-    <div class="modal-container">
-      <div class="user-header">
+    <div class="modal-container d-flex flex-column align-items-start">
+      <div class="user-header d-flex justify-cont  align-items-end">
         <img src="./image/foto-usuario.png" alt="Foto de perfil" class="rounded-circle" width="60" height="60">
-        <span class="username">Nome do Usuário</span>
+        <div class="imagem-assinatura d-flex flex-column ms-2">
+          <span class="username text-white">Nome do Usuário</span>
+          <img src="./image/assinatura.png" class="imagem-assinatura">
+        </div>
       </div>
-      <div class="custom-modal">
-        <div class="modal-body">
-          <p>Aqui vai o conteúdo do modal.</p>
+      <div class="custom-modal d-flex justify-content-center align-items-center">
+        <div class="modal-body text-center fs-4">
+          <p>Arraste o documento para aqui</p>
+          <p>ou</p>      
+          <label class="btn btn-primary btn-personalizado fs-4">
+            Anexar documento
+            <input type="file" hidden>
+          </label>
         </div>
       </div>
     </div>

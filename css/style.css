@@ -106,12 +106,31 @@ page-1.ativa {
 }
 
 .user-header {
+  padding: 0;
+  margin: 0;
 }
 
 /* Estilo da imagem do perfil */
 .user-header img {
   width: 60px;  /* Largura da imagem */
   height: 80px;  /* Altura da imagem */
+  margin: 0;
+}
+
+.imagem-assinatura img{
+  object-fit: contain;
+  width: 100px;  /* Largura da imagem */
+  height: 50px; 
+}
+
+.btn-personalizado {
+  background-color: #003B5C; /* roxo escuro */
+  color: white;
+  border: none;
+}
+
+.btn-personalizado:hover {
+  background-color: #00253a; /* tom mais escuro no hover */
 }
 
 /* Contêiner para o modal */
@@ -133,7 +152,8 @@ page-1.ativa {
   border-radius: 10px;  /* Borda arredondada */
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Sombras ao redor do modal */
   max-width: 90%;  /* Largura máxima de 90% da tela */
-  width: 400px;  /* Largura fixa */
+  width: 40vw;  /* Largura fixa */
+  height: 40vh;
 }
 
 
