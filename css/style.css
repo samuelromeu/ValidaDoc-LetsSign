@@ -84,7 +84,12 @@ body {
     display: block;
   }
 
-/* A página 3 vai ter uma altura de 85% da tela */
+  page-4.ativa {
+  display: flex;
+  flex-direction: column;
+  height: 85vh;
+  width: 100vw;
+}
 page-3.ativa {
   display: flex;
   flex-direction: column;
@@ -154,6 +159,8 @@ page-1.ativa {
   max-width: 90%;  /* Largura máxima de 90% da tela */
   width: 40vw;  /* Largura fixa */
   height: 40vh;
+  overflow: inherit;         /* adiciona scroll se algo passar do limite */
+
 }
 
 
@@ -348,13 +355,17 @@ body {
 
 page-1,
 page-2,
-page-3 {
+page-3,
+page-4,
+page-5 {
   display: none;
 }
 
 page-1.ativa,
 page-2.ativa,
-page-3.ativa {
+page-3.ativa,
+page-4.ativa,
+page-5.ativa {
   display: flex;
 }
 .imagem-notebook {
@@ -380,4 +391,30 @@ page-3.ativa {
   display: block;
   margin: 0 auto;          /* Centraliza horizontalmente */
   max-width: 80%  
+}
+
+.mirrored {
+  transform: scaleX(-1);
+}
+
+.video-oval {
+  width: 150px;
+  height: 200px;
+  border-radius: 100% / 100%;
+  object-fit: cover;
+  transform: scaleX(-1); /* espelhado */
+}
+
+#videoCamera{
+          display: none;
+          width: 180px;
+          height: 240px;
+          border-radius: 65% / 60%;
+          object-fit: cover;
+          margin: 0 auto; /* Alinha horizontalmente */
+          margin-bottom: 20px;
+}
+
+.btn-largura-personalizada {
+  width: 300px; /* Ajuste o valor conforme necessário */
 }
