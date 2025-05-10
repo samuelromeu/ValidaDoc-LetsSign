@@ -345,6 +345,7 @@ body {
   display: flex;
   flex-direction: row;
 }
+
 page-1,
 page-2,
 page-3 {
@@ -358,4 +359,25 @@ page-3.ativa {
 }
 .imagem-notebook {
   margin-top: 60px; /* Ajuste o valor conforme necessário */
+}
+
+.header {
+  margin-bottom: 20px;
+  text-align: center; /* Centraliza o texto horizontalmente */
+  width: 100%; /* Garante que o container ocupe toda a largura */
+  margin-top: 80px;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: #666;
+  margin-top: 0;
+}
+
+.notebook-interface{
+   width: 700px; /* ou qualquer valor desejado */
+  height: auto; /* mantém a proporção */
+  display: block;
+  margin: 0 auto;          /* Centraliza horizontalmente */
+  max-width: 80%  
 }
