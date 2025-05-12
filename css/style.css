@@ -83,6 +83,12 @@ body {
   .ativa {
     display: block;
   }
+    page-5.ativa {
+  display: flex;
+  flex-direction: column;
+  height: 85vh;
+  width: 100vw;
+}
 
   page-4.ativa {
   display: flex;
@@ -417,6 +423,26 @@ page-5.ativa {
 
 .btn-largura-personalizada {
   width: 300px; /* Ajuste o valor conforme necessário */
+}
+
+.mapa {
+  width: 100%;
+  height: 60%;
+}
+
+#custom-modal-page-5 {
+  max-width: 90%;
+  height: 70vh;
+}
+
+#btn-final {
+  width: 500px;
+  margin: 1px;
+}
+
+#btn-final2 {
+  width: 200px;
+  height: 40px;
 }
 /* Sobre Nós - Seção: Blocos*/
 .area-blocos {
