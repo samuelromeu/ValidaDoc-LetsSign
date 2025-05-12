@@ -369,7 +369,7 @@ page-5.ativa {
   display: flex;
 }
 .imagem-notebook {
-  margin-top: 60px; /* Ajuste o valor conforme necessário */
+  margin-top: 30px; /* Ajuste o valor conforme necessário */
 }
 
 .header {
@@ -417,4 +417,79 @@ page-5.ativa {
 
 .btn-largura-personalizada {
   width: 300px; /* Ajuste o valor conforme necessário */
+}
+/* Sobre Nós - Seção: Blocos*/
+.area-blocos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 900px;
+  margin-left: auto; /* Joga os blocos para a direita */
+  margin-right: 60px; /* Distância da borda direita */
+  margin-top: 80px;
+}
+
+.bloco {
+  border: 1px solid #00334e;
+  border-radius: 6px;
+  background-color: #f4f8fb;
+  padding: 20px;
+  color: #00334e;
+  min-height: 200px;
+}
+
+.bloco.escuro {
+  background-color: #00334e;
+  color: white;
+}
+
+.bloco h3 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.bloco p {
+  font-size: 0.9rem;
+  text-align: center;
+}
+/*Sobre Nós - Seção: logo de fundo e texto*/
+.imagem-fundo {
+    position: relative;
+    width: 100%; /* ou o tamanho que você desejar */
+    max-width: 100%; /* para ser responsivo */
+}
+
+.logo-fundo  {
+    width: 50%;
+    height: auto;
+    display: block;
+}
+
+.texto-sobreposto {
+    position: absolute;
+    top: 20px; /* ajuste conforme necessário */
+    left: 20px; /* ajuste conforme necessário */
+    width: 70%; /* ou o tamanho que você desejar */
+    padding: 30px;
+    color: #333;
+}
+
+.texto-sobreposto h2 {
+    margin-top: 45px;
+    color: #006FAE;
+    font-size: 30px;
+    font-family:'Lato', sans-serif;
+}
+.texto-sobreposto p {
+    margin-top: 40px;
+    color: #006FAE;
+    font-size: 20px;
+    font-family:'Lato', sans-serif;
+}
+
+
+.destaque {
+  font-weight: bold;
+  color: #006FAE;
+  font-family:'Lato', sans-serif;
 }
