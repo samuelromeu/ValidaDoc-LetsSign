@@ -1,101 +1,113 @@
 body {
-    font-family: "Inter", sans-serif;
-  }
-
-  .nav-link {
-    position: relative;
-    padding-bottom: 8px;
-  }
-
-  .nav-link.active::after {
-    content: "";
-    position: absolute;
-    bottom: -27px;
-    left: 0;
-    height: 3px;
-    width: 100%;
-    background-color: #003B5C;
-    border-radius: 2px;
-  }
-
-  .navbar-collapse {
-    margin-left: 100px;
-  }
-
-  .nav-item {
-    margin-right: 25px;
-
-  }
-
-  .navbar-collapse {
-    display: flex;
-    height: 100%;
-    flex-direction: row;
-    align-items: flex-end;
-  }
-
-  .circles {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 10px;
-  }
-
-  .sr-circle {
-    width: 75px;
-    height: 75px;
-    background-color: #D9D9D9;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 25px;
-  }
-
-  .sr-circle-2 {
-    width: 40px;
-    height: 40px;
-    background-color: white;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 14px;
-
-    border: 2px solid #003B5C;
-  }
-
-  .rounded-circle {
-    margin-left: 55px;
-    margin-bottom: 55px;
-  }
-
-  .rounded-circle-2 {
-    margin-left: 25px;
-    margin-bottom: 25px;
-  }
+  font-family: 'Inter', sans-serif;
+}
 
 
-  page-1, page-2, page-3 {
-    display: none;
-  }
+.nav-link {
+  position: relative;
+  padding-bottom: 8px;
+}
 
-  .ativa {
-    display: block;
-  }
-    page-5.ativa {
+.nav-link.active::after {
+  content: "";
+  position: absolute;
+  bottom: -27px;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background-color: #003B5C;
+  border-radius: 2px;
+}
+
+.navbar-collapse {
+  margin-left: 100px;
+}
+
+.nav-item {
+  margin-right: 25px;
+
+}
+
+.navbar-collapse {
+  display: flex;
+  height: 100%;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.circles {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.sr-circle {
+  width: 75px;
+  height: 75px;
+  background-color: #D9D9D9;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+}
+
+.sr-circle-2 {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+
+  border: 2px solid #003B5C;
+}
+
+.rounded-circle {
+  margin-left: 55px;
+  margin-bottom: 55px;
+}
+
+.rounded-circle-2 {
+  margin-left: 25px;
+  margin-bottom: 25px;
+}
+
+
+page-1,
+page-2,
+page-3 {
+  display: none;
+}
+
+.ativa {
+  display: block;
+}
+
+page-6.ativa {
   display: flex;
   flex-direction: column;
   height: 85vh;
   width: 100vw;
 }
 
-  page-4.ativa {
+page-5.ativa {
   display: flex;
   flex-direction: column;
   height: 85vh;
   width: 100vw;
 }
+
+page-4.ativa {
+  display: flex;
+  flex-direction: column;
+  height: 85vh;
+  width: 100vw;
+}
+
 page-3.ativa {
   display: flex;
   flex-direction: column;
@@ -123,33 +135,40 @@ page-1.ativa {
 
 /* Estilo da imagem do perfil */
 .user-header img {
-  width: 60px;  /* Largura da imagem */
-  height: 80px;  /* Altura da imagem */
+  width: 60px;
+  /* Largura da imagem */
+  height: 80px;
+  /* Altura da imagem */
   margin: 0;
 }
 
-.imagem-assinatura img{
+.imagem-assinatura img {
   object-fit: contain;
-  width: 100px;  /* Largura da imagem */
-  height: 50px; 
+  width: 100px;
+  /* Largura da imagem */
+  height: 50px;
 }
 
 .btn-personalizado {
-  background-color: #003B5C; /* roxo escuro */
+  background-color: #003B5C;
+  /* roxo escuro */
   color: white;
   border: none;
 }
 
 .btn-personalizado:hover {
-  background-color: #00253a; /* tom mais escuro no hover */
+  background-color: #00253a;
+  /* tom mais escuro no hover */
 }
 
 /* Contêiner para o modal */
 .modal-container {
   position: fixed;
-  top: 50%;  /* Coloca o modal logo abaixo do cabeçalho */
+  top: 50%;
+  /* Coloca o modal logo abaixo do cabeçalho */
   left: 50%;
-  transform: translateX(-50%) translateY(-50%); /* Ajuste para centralizar verticalmente */
+  transform: translateX(-50%) translateY(-50%);
+  /* Ajuste para centralizar verticalmente */
   z-index: 1050;
   display: flex;
   flex-direction: column;
@@ -158,39 +177,47 @@ page-1.ativa {
 
 /* Estilo do modal */
 .custom-modal {
-  background-color: white;  /* Fundo branco */
-  padding: 2rem;  /* Espaçamento interno */
-  border-radius: 10px;  /* Borda arredondada */
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Sombras ao redor do modal */
-  max-width: 90%;  /* Largura máxima de 90% da tela */
-  width: 40vw;  /* Largura fixa */
+  background-color: white;
+  /* Fundo branco */
+  padding: 2rem;
+  /* Espaçamento interno */
+  border-radius: 10px;
+  /* Borda arredondada */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  /* Sombras ao redor do modal */
+  max-width: 90%;
+  /* Largura máxima de 90% da tela */
+  width: 40vw;
+  /* Largura fixa */
   height: 40vh;
-  overflow: inherit;         /* adiciona scroll se algo passar do limite */
+  overflow: inherit;
+  /* adiciona scroll se algo passar do limite */
 
 }
 
 
-  @media (max-width: 992px) {
-    .circles {
-        display: none;
-      }
+@media (max-width: 992px) {
+  .circles {
+    display: none;
+  }
 
-    .nav-link {
+  .nav-link {
     position: relative;
     padding-bottom: 0px;
-    
-    }
-    .nav-link.active::after {
-        content: "";
-        position: absolute;
-        bottom: 0px;
-        left: 0;
-        height: 3px;
-        width: 100%;
-        background-color: #003B5C;
-        border-radius: 2px;
-      }
+
   }
+
+  .nav-link.active::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background-color: #003B5C;
+    border-radius: 2px;
+  }
+}
 
 /*login*/
 :root {
@@ -213,7 +240,8 @@ page-1.ativa {
 body {
   background-color: var(--light-gray);
   color: var(--text-color);
-  font-size: 14px; /* Tamanho de fonte reduzido */
+  font-size: 14px;
+  /* Tamanho de fonte reduzido */
 }
 
 .container {
@@ -222,14 +250,17 @@ body {
 }
 
 .sidebar {
-  width: 250px; /* Largura reduzida */
+  width: 250px;
+  /* Largura reduzida */
   background-color: var(--white);
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start; /* Alinhamento no topo */
-  padding: 1.5rem; /* Padding reduzido */
-  box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+  justify-content: flex-start;
+  /* Alinhamento no topo */
+  padding: 1.5rem;
+  /* Padding reduzido */
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .logo-container {
@@ -240,20 +271,23 @@ body {
 .logo-container h1 {
   color: var(--primary-color);
   margin-bottom: 1rem;
-  font-size: 1.5rem; /* Tamanho reduzido */
+  font-size: 1.5rem;
+  /* Tamanho reduzido */
 }
 
 .divider {
   width: 100%;
   height: 1px;
   background-color: var(--divider-color);
-  margin: 1rem 0; /* Margem reduzida */
+  margin: 1rem 0;
+  /* Margem reduzida */
 }
 
 .menu {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem; /* Espaço entre itens reduzido */
+  gap: 0.5rem;
+  /* Espaço entre itens reduzido */
   width: 100%;
   margin-bottom: 1rem;
 }
@@ -261,14 +295,16 @@ body {
 .menu a {
   color: var(--text-color);
   text-decoration: none;
-  padding: 0.3rem 0.5rem; /* Padding reduzido */
+  padding: 0.3rem 0.5rem;
+  /* Padding reduzido */
   transition: all 0.3s ease;
   font-size: 0.9rem;
 }
 
 .highlight-text {
   font-weight: bold;
-  margin: 0.3rem 0; /* Margem reduzida */
+  margin: 0.3rem 0;
+  /* Margem reduzida */
   text-align: center;
   font-size: 0.85rem;
 }
@@ -278,40 +314,47 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1rem; /* Padding reduzido */
+  padding: 1rem;
+  /* Padding reduzido */
 }
 
 .form-container {
   max-width: 700px;
   width: 100%;
   background: var(--white);
-  padding: 1.5rem; /* Padding reduzido */
+  padding: 1.5rem;
+  /* Padding reduzido */
   border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .form-container h2 {
   color: var(--primary-color);
-  margin-bottom: 0.8rem; /* Margem reduzida */
-  font-size: 1.2rem; /* Tamanho reduzido */
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 
-  Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-font-weight: 600;
+  margin-bottom: 0.8rem;
+  /* Margem reduzida */
+  font-size: 1.2rem;
+  /* Tamanho reduzido */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 600;
 }
 
 .form-container p {
-  margin-bottom: 1.5rem; /* Margem reduzida */
+  margin-bottom: 1.5rem;
+  /* Margem reduzida */
   color: #666;
   font-size: 0.9rem;
 }
 
 .form-group {
-  margin-bottom: 1rem; /* Margem reduzida */
+  margin-bottom: 1rem;
+  /* Margem reduzida */
 }
 
 .form-group label {
   display: block;
-  margin-bottom: 0.3rem; /* Margem reduzida */
+  margin-bottom: 0.3rem;
+  /* Margem reduzida */
   font-weight: 500;
   font-size: 0.85rem;
 }
@@ -320,17 +363,20 @@ font-weight: 600;
 .form-group input[type="email"],
 .form-group input[type="tel"] {
   width: 100%;
-  padding: 0.6rem; /* Padding reduzido */
+  padding: 0.6rem;
+  /* Padding reduzido */
   border: 1px solid var(--input-border);
   border-radius: 4px;
-  font-size: 0.85rem; /* Tamanho reduzido */
+  font-size: 0.85rem;
+  /* Tamanho reduzido */
 }
 
 .terms {
   display: flex;
   align-items: flex-start;
   gap: 0.5rem;
-  margin-top: 1rem; /* Margem reduzida */
+  margin-top: 1rem;
+  /* Margem reduzida */
 }
 
 .terms input[type="checkbox"] {
@@ -338,23 +384,29 @@ font-weight: 600;
 }
 
 .terms label {
-  font-size: 0.75rem; /* Tamanho reduzido */
+  font-size: 0.75rem;
+  /* Tamanho reduzido */
   color: #666;
   font-weight: normal;
 }
 
 .cta-button {
   width: 100%;
-  padding: 0.7rem; /* Padding reduzido */
-  font-size: 0.9rem; /* Tamanho reduzido */
+  padding: 0.7rem;
+  /* Padding reduzido */
+  font-size: 0.9rem;
+  /* Tamanho reduzido */
   background-color: #003B5C;
-  color: #ffffff  ;
+  color: #ffffff;
 }
+
 body {
-  background-color: #f0f8ff; /* Azul claro */
+  background-color: #f0f8ff;
+  /* Azul claro */
 }
+
 /* sobreposição*/
-.sobreposicao{
+.sobreposicao {
   display: flex;
   flex-direction: row;
 }
@@ -363,7 +415,8 @@ page-1,
 page-2,
 page-3,
 page-4,
-page-5 {
+page-5,
+page-6 {
   display: none;
 }
 
@@ -371,17 +424,22 @@ page-1.ativa,
 page-2.ativa,
 page-3.ativa,
 page-4.ativa,
-page-5.ativa {
+page-5.ativa,
+page-6.ativa {
   display: flex;
 }
+
 .imagem-notebook {
-  margin-top: 30px; /* Ajuste o valor conforme necessário */
+  margin-top: 30px;
+  /* Ajuste o valor conforme necessário */
 }
 
 .header {
   margin-bottom: 20px;
-  text-align: center; /* Centraliza o texto horizontalmente */
-  width: 100%; /* Garante que o container ocupe toda a largura */
+  text-align: center;
+  /* Centraliza o texto horizontalmente */
+  width: 100%;
+  /* Garante que o container ocupe toda a largura */
   margin-top: 80px;
 }
 
@@ -391,12 +449,15 @@ page-5.ativa {
   margin-top: 0;
 }
 
-.notebook-interface{
-   width: 700px; /* ou qualquer valor desejado */
-  height: auto; /* mantém a proporção */
+.notebook-interface {
+  width: 700px;
+  /* ou qualquer valor desejado */
+  height: auto;
+  /* mantém a proporção */
   display: block;
-  margin: 0 auto;          /* Centraliza horizontalmente */
-  max-width: 80%  
+  margin: 0 auto;
+  /* Centraliza horizontalmente */
+  max-width: 80%
 }
 
 .mirrored {
@@ -408,21 +469,24 @@ page-5.ativa {
   height: 200px;
   border-radius: 100% / 100%;
   object-fit: cover;
-  transform: scaleX(-1); /* espelhado */
+  transform: scaleX(-1);
+  /* espelhado */
 }
 
-#videoCamera{
-          display: none;
-          width: 180px;
-          height: 240px;
-          border-radius: 65% / 60%;
-          object-fit: cover;
-          margin: 0 auto; /* Alinha horizontalmente */
-          margin-bottom: 20px;
+#videoCamera {
+  display: none;
+  width: 180px;
+  height: 240px;
+  border-radius: 65% / 60%;
+  object-fit: cover;
+  margin: 0 auto;
+  /* Alinha horizontalmente */
+  margin-bottom: 20px;
 }
 
 .btn-largura-personalizada {
-  width: 300px; /* Ajuste o valor conforme necessário */
+  width: 300px;
+  /* Ajuste o valor conforme necessário */
 }
 
 .mapa {
@@ -444,14 +508,17 @@ page-5.ativa {
   width: 200px;
   height: 40px;
 }
+
 /* Sobre Nós - Seção: Blocos*/
 .area-blocos {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   max-width: 900px;
-  margin-left: auto; /* Joga os blocos para a direita */
-  margin-right: 60px; /* Distância da borda direita */
+  margin-left: auto;
+  /* Joga os blocos para a direita */
+  margin-right: 60px;
+  /* Distância da borda direita */
   margin-top: 80px;
 }
 
@@ -478,44 +545,51 @@ page-5.ativa {
   font-size: 0.9rem;
   text-align: center;
 }
+
 /*Sobre Nós - Seção: logo de fundo e texto*/
 .imagem-fundo {
-    position: relative;
-    width: 100%; /* ou o tamanho que você desejar */
-    max-width: 100%; /* para ser responsivo */
+  position: relative;
+  width: 100%;
+  /* ou o tamanho que você desejar */
+  max-width: 100%;
+  /* para ser responsivo */
 }
 
-.logo-fundo  {
-    width: 50%;
-    height: auto;
-    display: block;
+.logo-fundo {
+  width: 50%;
+  height: auto;
+  display: block;
 }
 
 .texto-sobreposto {
-    position: absolute;
-    top: 20px; /* ajuste conforme necessário */
-    left: 20px; /* ajuste conforme necessário */
-    width: 70%; /* ou o tamanho que você desejar */
-    padding: 30px;
-    color: #333;
+  position: absolute;
+  top: 20px;
+  /* ajuste conforme necessário */
+  left: 20px;
+  /* ajuste conforme necessário */
+  width: 70%;
+  /* ou o tamanho que você desejar */
+  padding: 30px;
+  color: #333;
 }
 
 .texto-sobreposto h2 {
-    margin-top: 45px;
-    color: #006FAE;
-    font-size: 30px;
-    font-family:'Lato', sans-serif;
+  margin-top: 45px;
+  color: #006FAE;
+  font-size: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 .texto-sobreposto p {
-    margin-top: 40px;
-    color: #006FAE;
-    font-size: 20px;
-    font-family:'Lato', sans-serif;
+  margin-top: 40px;
+  color: #006FAE;
+  font-size: 20px;
+  font-family: 'Lato', sans-serif;
 }
 
 
 .destaque {
   font-weight: bold;
   color: #006FAE;
-  font-family:'Lato', sans-serif;
+  font-family: 'Lato', sans-serif;
 }
